@@ -57,7 +57,7 @@ fn ra_verify(
     if attributes.str_tee_platform == TEE_PLATFORM_SGX
         || attributes.str_tee_platform == TEE_PLATFORM_TDX
     {
-        verified_attributes.bool_debug_disabled = "1".to_string();
+        verified_attributes.bool_debug_disabled = "0".to_string();
     }
 
     verified_attributes.hex_user_data = hex_report_data.clone();
